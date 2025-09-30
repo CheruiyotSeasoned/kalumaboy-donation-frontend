@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Green as primary - hope and healing */
+    --primary: 122 47% 33%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 122 47% 45%;
+    --primary-lighter: 122 40% 85%;
+    --primary-dark: 122 47% 25%;
+
+    /* Subtle secondary colors */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 122 40% 95%;
+    --accent-foreground: 122 47% 33%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 122 47% 33%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
