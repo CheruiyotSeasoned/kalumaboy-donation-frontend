@@ -103,7 +103,7 @@ export const PesapalDialog = ({ open, onOpenChange, amount, onSuccess }: Pesapal
 
     try {
       // Call your backend API to create Pesapal order
-      const response = await fetch('http://localhost:3000/api/pesapal/create-order', {
+      const response = await fetch('https://kalumaboy-donation-backend.vercel.app//api/pesapal/create-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

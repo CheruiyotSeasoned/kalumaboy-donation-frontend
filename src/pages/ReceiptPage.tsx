@@ -18,7 +18,7 @@ export default function ReceiptPage() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:3000/api/receipt/${id}`)
+    fetch(`https://kalumaboy-donation-backend.vercel.app/api/receipt/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Receipt not found");
         return res.json();
@@ -66,7 +66,7 @@ export default function ReceiptPage() {
       <div className="mt-6 text-center">
         <button
           className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-          onClick={() => window.location.href = "http://localhost:8080"}
+          onClick={() => window.location.href = "https://kalumaboy-donation-frontend.vercel.app"}
         >
           Back to Home
         </button>
