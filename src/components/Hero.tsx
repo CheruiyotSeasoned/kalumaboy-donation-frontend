@@ -69,14 +69,6 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
               <span className="text-white">Initiative</span>
             </h1>
 
-            {/* Disclaimer Badge */}
-            <div className="inline-block px-4 py-2 bg-yellow-400/20 backdrop-blur-sm rounded-full border border-yellow-400/30 mb-6">
-              <p className="text-yellow-300 text-sm font-semibold">
-                ⚠️ Disclaimer: We have not yet met Vincent Kaluma. This initiative
-                was created in respect for his story, and we hope to connect with
-                him soon.
-              </p>
-            </div>
 
             {/* Original Storytelling Text */}
             <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed font-light">
@@ -91,7 +83,14 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
               medical hardship. Together, we can bring healing, dignity, and
               strength to those who need it most.
             </p>
-
+            {/* Disclaimer Badge */}
+            <div className="inline-block px-4 py-2 bg-yellow-400/20 backdrop-blur-sm rounded-full border border-yellow-400/30 mb-6">
+              <p className="text-yellow-300 text-sm font-semibold">
+                ⚠️ Disclaimer: We have not yet met Vincent Kaluma. This initiative
+                was created in respect for his story, and we hope to connect with
+                him soon.
+              </p>
+            </div>
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
