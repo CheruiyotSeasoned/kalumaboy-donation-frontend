@@ -45,7 +45,7 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
         </div>
       </div>
 
-      {/* Overlay Image */}
+      {/* Hero image overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: `url(${heroImage})` }}
@@ -53,11 +53,11 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
 
       <div className="container relative z-10 py-16">
         <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-8 lg:gap-12 items-center">
-          {/* Text Section */}
+          {/* Left column */}
           <div className="animate-fade-in">
             <div className="inline-block px-4 py-2 bg-green-400/20 backdrop-blur-sm rounded-full border border-green-400/30 mb-4">
               <p className="text-green-300 text-sm font-semibold">
-                🤝 Transparency First
+                🤝 Every Contribution Counts
               </p>
             </div>
 
@@ -69,19 +69,30 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
               <span className="text-white">Initiative</span>
             </h1>
 
+            {/* Disclaimer Badge */}
+            <div className="inline-block px-4 py-2 bg-yellow-400/20 backdrop-blur-sm rounded-full border border-yellow-400/30 mb-6">
+              <p className="text-yellow-300 text-sm font-semibold">
+                ⚠️ Disclaimer: We have not yet met Vincent Kaluma. This initiative
+                was created in respect for his story, and we hope to connect with
+                him soon.
+              </p>
+            </div>
+
+            {/* Original Storytelling Text */}
             <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed font-light">
-              We have not yet met <strong>Vincent Kaluma</strong> personally —
-              this initiative was created out of respect for his story, and in
-              hopes of connecting with him.
+              Inspired by Vincent Kaluma’s fight for his father, we are standing
+              with families in need of hope.
             </p>
 
             <p className="text-base md:text-lg text-white/80 mb-6 leading-relaxed">
-              If you are connected to Vincent, please help us reach him so this
-              platform can directly involve him. In the meantime, our commitment
-              is clear: <strong>98% of funds</strong> go directly to families in
-              need, <strong>2%</strong> support operations.
+              Vincent works the tea fields every day to keep his father alive.
+              His story is the beginning — the KalumaBoy Initiative exists to
+              help families like his, who are struggling with the weight of
+              medical hardship. Together, we can bring healing, dignity, and
+              strength to those who need it most.
             </p>
 
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 size="lg"
@@ -103,7 +114,7 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
               </Button>
             </div>
 
-            {/* Impact Stats */}
+            {/* Updated Impact stats */}
             <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-white/20">
               <div>
                 <div className="text-2xl font-bold text-green-400 mb-1">98%</div>
@@ -122,7 +133,7 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
             </div>
           </div>
 
-          {/* TikTok Section */}
+          {/* Right column - TikTok embed */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-[325px] h-[580px]">
               <div className="absolute -inset-3 bg-gradient-to-r from-green-500 via-teal-500 to-emerald-500 rounded-2xl opacity-20 blur-xl"></div>
@@ -174,7 +185,7 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
                 )}
               </div>
 
-              {/* Removed misleading "Verified" badge */}
+              {/* Floating badge (only keep one) */}
               <div className="absolute -bottom-3 -left-3 bg-teal-500 text-white px-3 py-1.5 rounded-full font-bold text-xs shadow-xl">
                 ✨ Real Impact
               </div>
