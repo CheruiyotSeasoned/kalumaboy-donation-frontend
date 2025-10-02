@@ -42,7 +42,7 @@ export const TransparencySection = () => {
 
         {/* Donation Progress + Allocation */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="p-6 shadow-soft">
+          {/* <Card className="p-6 shadow-soft">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <DollarSign className="h-5 w-5 text-primary" /> Donation Progress
             </h3>
@@ -53,7 +53,7 @@ export const TransparencySection = () => {
             <p className="text-xs text-muted-foreground mt-2">
               Every contribution brings us closer to transforming more lives.
             </p>
-          </Card>
+          </Card> */}
 
           <Card className="p-6 shadow-soft">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
