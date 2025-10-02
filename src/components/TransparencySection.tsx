@@ -40,49 +40,6 @@ export const TransparencySection = () => {
           </p>
         </div>
 
-        {/* Donation Progress + Allocation */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* <Card className="p-6 shadow-soft">
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <DollarSign className="h-5 w-5 text-primary" /> Donation Progress
-            </h3>
-            <p className="text-sm text-muted-foreground mb-2">
-              Ksh {raised.toLocaleString()} raised of Ksh {goal.toLocaleString()} goal
-            </p>
-            <Progress value={progress} className="h-3" />
-            <p className="text-xs text-muted-foreground mt-2">
-              Every contribution brings us closer to transforming more lives.
-            </p>
-          </Card> */}
-
-          <Card className="p-6 shadow-soft">
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <HeartHandshake className="h-5 w-5 text-primary" /> Allocation of Funds
-            </h3>
-            <div className="h-48">
-              <ResponsiveContainer>
-                <PieChart>
-                  <Pie
-                    data={allocationData}
-                    dataKey="value"
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={80}
-                    label={({ name, value }) => `${name} ${value}%`}
-                  >
-                    {allocationData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index]} />
-                    ))}
-                  </Pie>
-                </PieChart>
-              </ResponsiveContainer>
-            </div>
-            <p className="text-xs text-muted-foreground text-center">
-              98% to families • 2% to operations
-            </p>
-          </Card>
-        </div>
-
         {/* Impact Metrics */}
         <div className="grid md:grid-cols-3 gap-6 mb-16 text-center">
           <Card className="p-6 shadow-soft">
