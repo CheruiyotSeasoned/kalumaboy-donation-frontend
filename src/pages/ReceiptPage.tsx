@@ -66,7 +66,7 @@ export default function ReceiptPage() {
       <div className="mt-6 text-center">
         <button
           className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-          onClick={() => window.location.href = "https://kalumaboy-donation-frontend.vercel.app"}
+          onClick={() => window.location.href = "https://www.kalumaboy.online"}
         >
           Back to Home
         </button>
