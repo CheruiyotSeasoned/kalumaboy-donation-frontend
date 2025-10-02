@@ -67,13 +67,14 @@ export const Hero = ({ onDonateClick }: HeroProps) => {
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed font-light">
-              Turning compassion into action for families battling medical hardship
-            </p>
-            
-            <p className="text-base md:text-lg text-white/80 mb-6 leading-relaxed">
-              Help a devoted son care for his ailing father. Vincent Kaluma has been working tirelessly, 
-              picking tea to cover medical bills. Your support brings hope and healing to a family in need.
-            </p>
+  Inspired by Vincent Kaluma’s fight for his father, we are standing with families in need of hope. 
+</p>
+
+<p className="text-base md:text-lg text-white/80 mb-6 leading-relaxed">
+  Vincent works the tea fields every day to keep his father alive. His story is the beginning — 
+  the KalumaBoy Initiative exists to help families like his, who are struggling with the weight of 
+  medical hardship. Together, we can bring healing, dignity, and strength to those who need it most. 
+</p>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button 
