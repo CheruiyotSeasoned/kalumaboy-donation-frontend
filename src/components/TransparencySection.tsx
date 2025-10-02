@@ -39,27 +39,27 @@ export const TransparencySection = () => {
             like compliance, reporting, and platform upkeep.
           </p>
         </div>
+{/* Impact Metrics */}
+<div className="grid md:grid-cols-3 gap-6 mb-16 text-center">
+  <Card className="p-6 shadow-soft">
+    <Users className="h-8 w-8 text-primary mx-auto mb-2" />
+    <h3 className="text-2xl font-bold">150+</h3>
+    <p className="text-sm text-muted-foreground">Families We Aim to Support</p>
+  </Card>
 
-        {/* Impact Metrics */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16 text-center">
-          <Card className="p-6 shadow-soft">
-            <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-            <h3 className="text-2xl font-bold">15+</h3>
-            <p className="text-sm text-muted-foreground">Families Supported</p>
-          </Card>
+  <Card className="p-6 shadow-soft">
+    <HeartHandshake className="h-8 w-8 text-primary mx-auto mb-2" />
+    <h3 className="text-2xl font-bold">KES 0</h3>
+    <p className="text-sm text-muted-foreground">Raised so far — help us begin the journey</p>
+  </Card>
 
-          <Card className="p-6 shadow-soft">
-            <HeartHandshake className="h-8 w-8 text-primary mx-auto mb-2" />
-            <h3 className="text-2xl font-bold">Ksh 250,000</h3>
-            <p className="text-sm text-muted-foreground">Raised so far</p>
-          </Card>
+  <Card className="p-6 shadow-soft">
+    <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
+    <h3 className="text-2xl font-bold">100%</h3>
+    <p className="text-sm text-muted-foreground">Transparency & Verification</p>
+  </Card>
+</div>
 
-          <Card className="p-6 shadow-soft">
-            <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
-            <h3 className="text-2xl font-bold">100%</h3>
-            <p className="text-sm text-muted-foreground">Audited & Verified</p>
-          </Card>
-        </div>
 
         {/* Testimonial */}
         <Card className="p-8 shadow-soft mb-16 bg-primary-lighter">
