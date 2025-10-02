@@ -12,8 +12,8 @@ export const Footer = () => {
               and care for Kaluma Boy's recovery journey.
             </p>
             <div className="mt-4 text-sm text-white/70">
-              <p>NGO Registration: NGO/2024/001</p>
-              <p>PBO Certificate: PBO/2024/001</p>
+              <p>NGO Registration: ............</p>
+              <p>PBO Certificate: .............</p>
             </div>
           </div>
 
@@ -23,13 +23,13 @@ export const Footer = () => {
               <div className="flex items-center gap-2 text-white/80">
                 <Mail className="h-4 w-4" />
                 <a href="mailto:info@kalumaboyinitiative.org" className="hover:text-primary-light transition-colors">
-                  info@kalumaboyinitiative.org
+                  info@akisolve@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2 text-white/80">
                 <Phone className="h-4 w-4" />
                 <a href="tel:+254712345678" className="hover:text-primary-light transition-colors">
-                  +254 712 345 678
+                  info@akisolve@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2 text-white/80">
