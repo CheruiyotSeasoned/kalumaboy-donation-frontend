@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Shield, FileText, Calendar } from "lucide-react";
+import { Shield, FileText, Calendar, HeartHandshake } from "lucide-react";
 
 export const TransparencySection = () => {
   const updates = [
@@ -31,7 +31,11 @@ export const TransparencySection = () => {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We believe in complete transparency. Here's how your donations are making a difference.
+            The <span className="font-semibold">KalumaBoy Initiative</span> exists courtesy of Kaluma’s story — 
+            and is dedicated to helping other struggling families like his.  
+            We are committed to openness: <span className="font-semibold">98% of every contribution goes directly 
+            to families</span>, while only <span className="font-semibold">2% covers essential operations</span> 
+            like compliance, reporting, and platform upkeep.
           </p>
         </div>
 
@@ -40,23 +44,26 @@ export const TransparencySection = () => {
             <FileText className="h-8 w-8 text-primary mb-4" />
             <h3 className="font-semibold text-lg mb-2">Financial Reports</h3>
             <p className="text-sm text-muted-foreground">
-              Monthly breakdowns of all donations received and expenses incurred for Kaluma's care.
+              Monthly breakdowns of all donations and expenses. Every shilling is tracked, with 98% 
+              directly funding families and 2% sustaining operations.
             </p>
           </Card>
 
           <Card className="p-6 shadow-soft hover:shadow-medium transition-shadow">
             <Shield className="h-8 w-8 text-primary mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Verified NGO</h3>
+            <h3 className="font-semibold text-lg mb-2">Verified Initiative</h3>
             <p className="text-sm text-muted-foreground">
-              Registered non-profit organization with PBO certification number: NGO/2024/001
+              Registered non-profit organization with PBO certification number: NGO/2024/001. 
+              Compliance and oversight ensure donor trust.
             </p>
           </Card>
 
           <Card className="p-6 shadow-soft hover:shadow-medium transition-shadow">
-            <Calendar className="h-8 w-8 text-primary mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Regular Updates</h3>
+            <HeartHandshake className="h-8 w-8 text-primary mb-4" />
+            <h3 className="font-semibold text-lg mb-2">Impact First</h3>
             <p className="text-sm text-muted-foreground">
-              Weekly progress reports on Kaluma's treatment and recovery journey shared with donors.
+              Contributions transform lives. Each donation supports treatment, food, and family care — 
+              ensuring dignity for those in need.
             </p>
           </Card>
         </div>
